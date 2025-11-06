@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body style="margin: 0; font-family: Arial, sans-serif;">
+    <div style="background-color: #333; overflow: hidden;">
+        <a href="#home"
+            style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; background-color: #4CAF50;">Home</a>
+        <a href="#about"
+            style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none;">About</a>
+        <a href="#contact"
+            style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none;">Contact</a>
+    </div>
+    <section>
+        <img class="mySlides" src="download.jpg" style="height:500px;width:1340px">
+        <img class="mySlides" src="download (2).jpg" style="height:500px;width:1340px">
+        <img class="mySlides" src="download (1).jpg" style="height:500px;width:1340px">
+    </section>
+    <br>
+    <span class="border trans" style="font-size: 40px;">
+        <center>Welcome all to this Website</center>
+    </span>
+    <section style="background-color: #282e34; color: #ddd; padding: 50px 80px; text-align: center;">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">Food</h2>
+        <p style="line-height: 1.6; font-size: 16px;">Food is essential for our survival. It provides the nutrients we
+            need to live and thrive. There are many different types of food, including fruits, vegetables, grains, and
+            proteins.</p>
+    </section>
+    <div style="background-color: #f4f4f4; padding: 50px 0; text-align: center;">
+        <div style="position: relative;">
+            <span
+                style="background-color: #111; color: #fff; padding: 20px; font-style: italic; display: inline-block; border-radius: 5px;">
+                "Let food be thy medicine and medicine be thy food." - Hippocrates</span><br><br><br>
+        </div>
+    </div>
+    <h2 style="color: #333; font-size: 24px; margin: 20px 0 10px 20px;">Pizza</h2>
+    <p style="padding: 0 20px; line-height: 1.8; font-size: 16px; color: #444;"><img src="download (2).jpg"
+            style="height:170px;width:170px;margin: 15px; float: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Pizza
+        is a popular Italian dish made with a round, flat base of leavened wheat-based dough topped with tomatoes,
+        cheese, and often various other ingredients (such as anchovies, olives, vegetables, meat, etc.), which is then
+        baked at a high temperature, traditionally in a wood-fired oven.</p>
+    <section style="background-color: #282e34; color: #ddd; padding: 20px; text-align: center; margin-top: 30px;">
+        All &copy; rights reserved by Codingal
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }// 
+    </script>
+</body>
+
+</html>
